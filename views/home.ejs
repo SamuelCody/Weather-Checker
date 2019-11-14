@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+
+<section class="landing-page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 left-bar landing">
+        <img src="images/illustration-main.svg" alt="illustration" class="illustration-image">
+      </div>
+      <div class="col-lg-6 right-bar landing ">
+        <div class="navbar-off">
+          <nav class="navbar navbar-expand">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo.png" alt="Weather Checker" class="logo">
+              <img src="images/logomobile.png" alt="Weather Checker" class="logomobile">
+            </a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="https://www.facebook.com/ayinde.samuel.75" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="nav-item"><a href="https://github.com/SamuelCody" target="_blank" class="nav-link"><i class="fab fa-github"></i></a></li>
+              <li class="nav-item"><a href="https://www.linkedin.com/in/ayindesamuelayomide" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <h1>Weather Checker</h1>
+        <p>Check weather info of any location in Nigeria, any time and any day!</p>
+        <h3>Check weather info of any Nigerian city...</h3>
+        <form action="/" method="POST">
+          <div class="form-row">
+            <div class="col-lg-5">
+              <input type="text" id="citySearch" class="form-control" name="getCity" placeholder="Enter any city">
+            </div>
+            <div class="col-lg">
+              <button type="submit" class="btn">Check!</button>
+            </div>
+
+          </div>
+        </form>
+        <a href="#" class="privacy">Made with ❤️</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") -%>

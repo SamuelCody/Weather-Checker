@@ -1,0 +1,213 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Checker</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    background: #eee;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #05d69b;
+    border-bottom: 2px solid #05d69b;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .box {
+    padding: 40px 0px;
+  }
+
+  .box-part {
+    background: #FFF;
+    border-radius: 0;
+    padding: 30px 10px;
+    margin: 30px 0px;
+  }
+
+  .box-part:hover {
+    box-shadow: 10px 10px 11px -10px rgba(130,116,130,0.6);
+  }
+
+  .text {
+    margin: 20px 0px;
+  }
+
+  .fa {
+    color: #05d69b;
+}
+
+.fa:hover {
+  -webkit-animation: rotate-center 0.9s ease-in-out both;
+  animation: rotate-center 0.9s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+  }
+</style>
+</head>
+<!--- Include the above in your HEAD tag ---------->
+
+<body>
+<div class="box">
+  <div class="container">
+    <h1>Weather Info for <span style="color: #05d69b; font-size: 32px;"><%= location %>, <%= state %> State.</span></h1>
+    <a href="/">Go Home</a>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-thermometer-half fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Temperature</h4>
+          </div>
+
+          <div class="text">
+            <span style="font-size: 32px;"><%= temperature %>&#8451;</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Timezone</h4>
+          </div>
+
+          <div class="text">
+            <span><%= timeZone %></span>
+          </div>
+
+          <div class="title">
+            <h4>Local Time</h4>
+          </div>
+
+          <div class="text">
+            <span><%= localTime %></span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Wind Speed</h4>
+          </div>
+
+          <div class="text">
+            <span><%= windSpeed %>Kmph</span>
+          </div>
+
+          <div class="title">
+            <h4>Wind Direction</h4>
+          </div>
+
+          <div class="text">
+            <span><%= windDegree %>&deg;<%= windDirection %></span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Pressure</h4>
+          </div>
+
+          <div class="text">
+            <span><%= pressure %> Millibar</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Humidity</h4>
+          </div>
+
+          <div class="text">
+            <span><%= humidity %>%</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+          <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+
+          <div class="title">
+            <h4>Cloud Cover</h4>
+          </div>
+
+          <div class="text">
+            <span><%= cloudcover %>%</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

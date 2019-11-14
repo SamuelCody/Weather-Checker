@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+<script>
+var client = algoliasearch('VTB10N1PGS', 'a6696be62ce10c2a7478043a7a417b5b');
+var index = client.initIndex('test_search');
+autocomplete('#citySearch', { hint: false }, [
+  {
+    source: autocomplete.sources.hits(index, { hitsPerPage: 3 }),
+    displayKey: 'city',
+    templates: {
+      suggestion: function(suggestion) {
+        return suggestion._highlightResult.city.value;
+      }
+    }
+  }
+]).on('autocomplete:selected', function(event, suggestion, dataset, context) {
+  console.log(event, suggestion, dataset, context);
+});
+</script>
+</body>
+
+</html>

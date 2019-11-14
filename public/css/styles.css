@@ -1,0 +1,256 @@
+.algolia-autocomplete {
+  width: 100%;
+}
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 100%;
+}
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-top: none;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #B2D7FF;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+/* Full Height of screen style */
+.landing {
+  height: 100vh;
+}
+
+/* Background image style */
+.left-bar {
+  background-image: linear-gradient(to bottom left, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
+}
+
+.right-bar {
+  background-color: #fff;
+}
+
+/* Illustration image style */
+.illustration-image {
+  width: 65%;
+  margin: 9rem 5rem;
+}
+
+/* Navigation bar styles */
+.navbar {
+  margin: 3rem 2rem 5rem;
+}
+
+/* Logo Style */
+.logo, .logomobile {
+  width: 50%;
+}
+
+.logomobile {
+  display: none;
+}
+
+/* Icon Color */
+.fab, .fas {
+  color: hsl(243, 87%, 12%);
+  padding-right: 0.8rem;
+}
+
+/* Header Text */
+h1, h3 {
+  margin-left: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: hsl(243, 87%, 12%);
+}
+
+/* Paragraph text */
+p {
+  margin: 2rem 8rem 0 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(0, 0%, 50%);
+}
+
+h3 {
+  margin: 3rem 0 0 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Form Styles */
+.form-row {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.form-control {
+  background-color: #fff;
+  border-style: none;
+  box-shadow: 2px 2px 5px hsl(0, 0%, 50%);
+}
+
+/* Button Style */
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 6px hsl(0, 0%, 50%);
+  -moz-box-shadow: 2px 2px 6px hsl(0, 0%, 50%);
+  box-shadow: 2px 2px 6px hsl(0, 0%, 50%);
+  color: #fff;
+  background: hsl(163, 95%, 43%);
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* Privacy Policy Style */
+.privacy {
+  display: block;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  color: hsl(243, 87%, 12%);
+  font-size: 0.8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Mobile Responsiveness for tablet */
+@media screen and (min-width: 561px) and (max-width: 991px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-off {
+    position: absolute;
+    top: -700px;
+    margin-top: 4rem;
+    width: 90%;
+  }
+
+  /* Hide Desktop logo and display mobile */
+  .logo {
+    display: none;
+  }
+
+  .logomobile {
+    display: block;
+  }
+
+  /* Icon color mobile */
+  .fab, .fas {
+    color: #fff;
+    padding-right: 0.2rem;
+  }
+
+  .illustration-image {
+    margin: 10rem 5rem 0;
+  }
+
+  h1, h3 {
+    margin-top: 3rem;
+  }
+
+  p {
+    margin-right: 4rem;
+  }
+
+  .form-control {
+    width: 60%;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile Responsiveness for phones */
+@media screen and (max-width: 560px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .left-bar {
+    background: url(../images/bg-intro.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .right-bar {
+    height: auto;
+  }
+
+  .illustration-image {
+    margin: 7rem 4rem 0;
+    width: 70%;
+  }
+
+  .navbar {
+    padding: 0;
+    margin: 1rem 0.6rem 5rem;
+  }
+
+  .navbar-off {
+    position: absolute;
+    top: -700px;
+    margin-top: 4rem;
+    width: 90%;
+  }
+
+  /* Hide Desktop logo and display mobile */
+  .logo {
+    display: none;
+  }
+
+  .logomobile {
+    display: block;
+  }
+
+  /* Icon color mobile */
+  .fab, .fas {
+    color: #fff;
+    padding-right: 0.2rem;
+  }
+
+  /* Heading Styles */
+  h1 {
+    margin-top: -7%;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin: 2rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .form-row {
+    margin-right: 2rem;
+    width: 60%;
+  }
+
+  .privacy {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
