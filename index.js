@@ -33,13 +33,12 @@ app.post("/", function(req, res) {
 
   request(options, function(error, response, body) {
     let data = JSON.parse(body);
-    console.log(data);
     res.render("results", {
       location: data.location.name,
       state: data.location.region,
       temperature: data.current.temperature,
       timeZone: data.location.timezone_id,
-      localTime: data.current.observation_time,
+      localTime: data.location.localtime,
       windSpeed: data.current.wind_speed,
       windDegree: data.current.wind_degree,
       windDirection: data.current.wind_dir,
