@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -26,7 +27,7 @@ app.post("/", function(req, res) {
     url: "http://api.weatherstack.com/current",
     method: "POST",
     qs: {
-      access_key: "900dae88ca26ce188647a6d18334f4f5",
+      access_key: process.env.ACCESS_KEY,
       query: attachCountry
     }
   };
