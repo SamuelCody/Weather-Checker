@@ -27,7 +27,11 @@ app.post("/", function(req, res) {
     url: "http://api.weatherstack.com/current",
     method: "POST",
     qs: {
+<<<<<<< HEAD
       access_key: process.env.ACCESS_KEY,
+=======
+      access_key: "",
+>>>>>>> 19dd7984fd90f6a429d052d9150e7a8989f1ab91
       query: attachCountry
     }
   };
